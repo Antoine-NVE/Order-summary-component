@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Red Hat Display';
+    min-height: 100vh;
+    background: url(assets/pattern-background-desktop.svg) no-repeat hsl(225, 100%, 94%);
+    background-size: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.img {
+    height: 220px;
+    background: url(assets/illustration-hero.svg) center/cover;
+}
+
+.text {
+    background: white;
+    padding: 50px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 1.75rem;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 25px;
+}
+
+.description {
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 15px;
+}
+
+.payment {
+    background: hsl(225, 100%, 98%);
+    text-align: left;
+    height: 48px;
+    padding: 25px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.payment img {
+    float: left;
+    margin-right: 25px;
+}
+
+.payment p {
+    line-height: 24px;
+}
+
+.plan {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+.payment a {
+    position: absolute;
+    right: 25px;
+    top: 38.5px;
+    color: hsl(245, 75%, 52%);
+}
+
+.proceed {
+    display: block;
+    text-decoration: none;
+    background: hsl(245, 75%, 52%);
+    color: white;
+    padding: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0px 15px 8px 9px hsl(225, 100%, 98%);
+}
+
+.cancel {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+}
+
+.payment a:hover {
+    color: hsl(245, 75%, 52%, 0.75);
+}
+
+.proceed:hover {
+    background: hsl(245, 75%, 52%, 0.75);
+}
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 450px) {
+
+    body {
+        background: url(assets/pattern-background-mobile.svg) center/cover hsl(225, 100%, 94%);
+    }
+
+    .container {
+        width: 350px;
+    }
+
+    .img {
+        height: 171px;
+    }
+
+    .text {
+        padding: 25px;
+    }
+}
